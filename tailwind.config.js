@@ -6,9 +6,9 @@ module.exports = {
     },
     extend: {
       screens: {
-        smm: { max: '767px' }, // max Mobile
+        smm: { max: '639px' }, // max Mobile
         mdm: { max: '1023px' }, // max Tablet
-        to: { min: '768px', max: '1023px' } // Tablet only
+        to: { min: '640px', max: '1023px' } // Tablet only
       }
     },
     plugins: []

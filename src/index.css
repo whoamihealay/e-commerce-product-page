@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  * {
+    margin: 0;
+  }
+
+  body,
+  #root,
+  .App {
+    @apply min-h-screen;
+  }
+
+  img,
+  picture,
+  video,
+  canvas,
+  svg {
+    max-width: 100%;
+    display: block;
+  }
+}
