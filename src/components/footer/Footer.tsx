@@ -2,7 +2,7 @@ import React from 'react';
 
 function Footer() {
   return (
-    <footer className="absolute bottom-0 left-0 right-0 text-center text-xs">
+    <footer className="bottom-0 left-0 right-0 hidden text-center text-xs sm:absolute">
       Challenge by{' '}
       <a
         className="text-blue-500"
