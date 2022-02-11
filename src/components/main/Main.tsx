@@ -7,23 +7,23 @@ function Main() {
   const [count, setCount] = useState(0);
 
   return (
-    <main className="md:flex md:items-center md:justify-center md:gap-12 md:px-4">
-      <div>
-        <div className="block mdm:max-h-80  mdm:overflow-hidden">
+    <main className="md:flex md:items-center md:justify-center md:gap-12 md:px-4 xl:gap-24">
+      <div className="w-full">
+        <div className="">
           <img
+            className="box-border block max-h-72 w-full object-cover object-center sm:max-h-96 md:max-h-full md:rounded-2xl"
             src="./media/image-product-1.jpg"
             alt=""
-            className="block max-w-full md:rounded-2xl smm:object-cover"
           />
         </div>
-        <div className="hidden md:flex">
-          <img src="./media/image-product-1.jpg" alt="" />
-          <img src="./media/image-product-2.jpg" alt="" />
-          <img src="./media/image-product-3.jpg" alt="" />
-          <img src="./media/image-product-4.jpg" alt="" />
+        <div className="hidden gap-4 py-4 md:flex">
+          <img src="./media/image-product-1.jpg" alt="" className="w-full rounded-2xl" />
+          <img src="./media/image-product-2.jpg" alt="" className="w-full rounded-2xl" />
+          <img src="./media/image-product-3.jpg" alt="" className="w-full rounded-2xl" />
+          <img src="./media/image-product-4.jpg" alt="" className="w-full rounded-2xl" />
         </div>
       </div>
-      <div className="p-4">
+      <div className="w-full p-4">
         <h2 className="text-xs font-bold uppercase text-orange-500">Sneaker Company</h2>
         <h1 className="py-2 text-3xl font-bold">Fall Limited Edition Sneakers</h1>
         <p className="py-2 text-gray-500">

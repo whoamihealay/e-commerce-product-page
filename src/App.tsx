@@ -5,9 +5,9 @@ import Main from './components/main/Main';
 
 function App() {
   return (
-    <div className="App mx-auto max-w-7xl">
+    <div className="App mx-auto max-w-5xl">
       <Header />
-      <hr className="hidden py-2 sm:block" />
+      <hr className="hidden py-2 md:block" />
       <Main />
       {/* Images sliders & selectors */}
       {/* Description */}
