@@ -12,8 +12,8 @@ function Header() {
   const [isCart, setIsCart] = useState(false);
 
   return (
-    <header className="flex items-center justify-between py-4 px-6">
-      <div className="flex items-center gap-4 md:gap-24">
+    <header className="flex items-center justify-between py-4 px-6 sm:py-8">
+      <div className="flex items-center gap-4 md:gap-10">
         <button
           aria-expanded={isOpen}
           aria-controls="navigation-menu"

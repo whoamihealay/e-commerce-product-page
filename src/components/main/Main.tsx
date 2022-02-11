@@ -7,13 +7,21 @@ function Main() {
   const [count, setCount] = useState(0);
 
   return (
-    <main className="md:flex md:items-center md:justify-center">
-      <div className="block max-h-80 overflow-hidden md:rounded-lg">
-        <img
-          src="./media/image-product-1.jpg"
-          alt=""
-          className="block max-w-full smm:object-cover"
-        />
+    <main className="md:flex md:items-center md:justify-center md:gap-12 md:px-4">
+      <div>
+        <div className="block mdm:max-h-80  mdm:overflow-hidden">
+          <img
+            src="./media/image-product-1.jpg"
+            alt=""
+            className="block max-w-full md:rounded-2xl smm:object-cover"
+          />
+        </div>
+        <div className="hidden md:flex">
+          <img src="./media/image-product-1.jpg" alt="" />
+          <img src="./media/image-product-2.jpg" alt="" />
+          <img src="./media/image-product-3.jpg" alt="" />
+          <img src="./media/image-product-4.jpg" alt="" />
+        </div>
       </div>
       <div className="p-4">
         <h2 className="text-xs font-bold uppercase text-orange-500">Sneaker Company</h2>
@@ -29,22 +37,24 @@ function Main() {
           </div>
           <div className="font-bold text-gray-400 line-through">$250.00</div>
         </div>
-        <div className="my-4 flex items-center justify-between rounded-lg bg-gray-100">
-          <button className="p-6" type="button" onClick={() => setCount(count - 1)}>
-            <IconMinus />
-          </button>
-          {count}
-          <button className="p-6" type="button" onClick={() => setCount(count + 1)}>
-            <IconPlus />
+        <div>
+          <div className="my-4 flex items-center justify-between rounded-lg bg-gray-100">
+            <button className="p-6" type="button" onClick={() => setCount(count - 1)}>
+              <IconMinus />
+            </button>
+            {count}
+            <button className="p-6" type="button" onClick={() => setCount(count + 1)}>
+              <IconPlus />
+            </button>
+          </div>
+          <button
+            type="button"
+            className="flex w-full items-center justify-center gap-4 rounded-lg bg-orange-500 py-4 font-bold text-white hover:opacity-70"
+          >
+            <IconCart />
+            Add to cart
           </button>
         </div>
-        <button
-          type="button"
-          className="flex w-full items-center justify-center gap-4 rounded-lg bg-orange-500 py-4 font-bold text-white hover:opacity-70"
-        >
-          <IconCart />
-          Add to cart
-        </button>
       </div>
     </main>
   );
