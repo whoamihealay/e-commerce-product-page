@@ -40,7 +40,7 @@ function Main() {
         </div>
         <button
           type="button"
-          className="flex w-full items-center justify-center gap-4 rounded-lg bg-orange-500 py-4 font-bold text-white"
+          className="flex w-full items-center justify-center gap-4 rounded-lg bg-orange-500 py-4 font-bold text-white hover:opacity-70"
         >
           <IconCart />
           Add to cart
