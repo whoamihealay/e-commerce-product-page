@@ -1,14 +1,14 @@
 import React from 'react';
 import Footer from './components/footer/Footer';
 import Header from './components/header/Header';
-import Main from './components/main/Main';
+import Home from './pages/Home';
 
 function App() {
   return (
     <div className="App mx-auto max-w-5xl">
       <Header />
       <hr className="hidden py-2 md:block" />
-      <Main />
+      <Home />
       {/* Images sliders & selectors */}
       {/* Description */}
 

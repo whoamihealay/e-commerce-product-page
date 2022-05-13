@@ -1,6 +1,6 @@
 import React from 'react';
 
-function IconMinus() {
+const Minus = () => {
   return (
     <svg
       width="12"
@@ -17,6 +17,6 @@ function IconMinus() {
       <use fill="#FF7E1B" fillRule="nonzero" xlinkHref="#a" />
     </svg>
   );
-}
+};
 
-export default IconMinus;
+export default Minus;

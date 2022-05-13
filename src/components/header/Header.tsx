@@ -1,11 +1,9 @@
-import React, { useState } from 'react';
-import Avatar from './Avatar';
-import Close from './Close';
-import Hamburger from './Hamburger';
-import Logo from './Logo';
-import Navigation from './Navigation';
-import IconCart from '../icons/IconCart';
-import CartDropdown from './CartDropdown';
+import { useState } from 'react';
+import Avatar from './profile/Avatar';
+import { Close, Hamburger, Logo, Cart } from '../../assets/Icons/';
+import Navigation from './navigation/Navigation';
+import CartDropdown from './cart/CartDropdown';
+import { profile } from '../../constants';
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,10 +28,10 @@ function Header() {
       </div>
       <div className="flex items-center gap-4 md:relative">
         <button className="text-gray-400" type="button" onClick={() => setIsCart(!isCart)}>
-          <IconCart />
+          <Cart />
         </button>
         {isCart && <CartDropdown />}
-        <Avatar />
+        <Avatar src={profile.avatar} />
       </div>
     </header>
   );

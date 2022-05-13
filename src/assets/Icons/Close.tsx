@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Close() {
+const Close = () => {
   return (
     <svg width="14" height="15" xmlns="http://www.w3.org/2000/svg">
       <path
@@ -10,6 +10,6 @@ function Close() {
       />
     </svg>
   );
-}
+};
 
 export default Close;

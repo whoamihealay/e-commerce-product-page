@@ -1,6 +1,6 @@
 import React from 'react';
 
-function IconPlus() {
+const Plus = () => {
   return (
     <svg
       width="12"
@@ -17,6 +17,6 @@ function IconPlus() {
       <use fill="#FF7E1B" fillRule="nonzero" xlinkHref="#b" />
     </svg>
   );
-}
+};
 
-export default IconPlus;
+export default Plus;
